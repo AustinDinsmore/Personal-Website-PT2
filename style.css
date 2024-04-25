@@ -1,13 +1,18 @@
 html{
-    background-color: rgb(10, 192, 192);
+    background-image: url(https://img.freepik.com/free-photo/black-prism-concept-ai-generated_268835-7011.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712361600&semt=ais);
+    
 }
-nav {
-    border: solid rgb(43, 86, 226);
-    background-color: rgb(43, 86, 226);
+nav{
+    border: solid rgb(68, 68, 68);
+    background-color: rgb(68, 68, 68);
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    color: rgb(137, 221, 221);   
+    color: rgb(255, 255, 255);   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .name{
     margin-left: 10px;
@@ -15,59 +20,79 @@ nav {
 body{
     text-align: center;
     margin: 0;
+    margin-top: 10%;
 }
 main{
-    border: solid rgb(4, 221, 120);
-    background-color: rgb(196, 220, 241);
     margin: 30px;
     align-content: center;
+    color: silver;
 }
 footer{
-    border: solid rgb(43, 86, 226);
-    background-color: rgb(43, 86, 226);
+    border: solid rgb(68, 68, 68);
+    background-color: rgb(68, 68, 68);
     align-items: center;
     text-align: center;
-    margin-top: 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-decoration: none;
 }
 p{
     display: inline;
 }
+.Home:hover{
+    background-color: gray;
+}
 .Home{
     text-decoration: dashed;
-    color: rgb(137, 221, 221);
+    color: rgb(255, 255, 255);
     border: solid;
     padding: 2px;
+}
+.About:hover{
+    background-color: gray;
 }
 .About{
     text-decoration: dashed;
-    color: rgb(137, 221, 221);
+    color: rgb(255, 255, 255);
     border: solid;
     padding: 2px;
+
+}
+.Portfolio:hover{
+    background-color: gray;
 }
 .Portfolio{
     text-decoration: dashed;
-    color: rgb(137, 221, 221);
+    color: rgb(255, 255, 255);
     border: solid;
     padding: 2px;
+}
+.Contact:hover{
+    background-color: gray;
+}
+.Contact{
+    text-decoration: dashed;
+    color: rgb(255, 255, 255);
+    border: solid;
+    padding: 2px;
+    margin-right: 8px;
 }
 h2{
     text-align: center;
 }
 #home-body{
-    align-self: center;
     text-align: center;
     display: flow-root;
-    border: solid 5px;
-    width: 80%;
+    width: 85%;
     margin-left: 9%;
     margin-bottom: 2%;
 }
 .hook{
     display:inline;
-    size: 75%;
 }
 .me {
-    height: 300px;
+    height: 700px;
     float: right;
     padding: 10px;
 }
@@ -79,39 +104,47 @@ h2{
     margin-top: 130px;
 }
 hr{
-    border: solid rgb(5, 5, 5) 2px;
+    border: solid silver 2px;
 }
+.about{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25%;
+    grid-template-areas: 
+        "Luna"
+        "travel"
+        "Games";
+    align-content: center;
+    margin-top: 35%;
+}
+
 #Luna{
-    text-align: center;
-    border: solid rgb(23, 89, 165);
     text-align: center;
     display: flow-root;
     width: 600px;
     margin-left: 33%;
-
+    font-size: large;
 }
 .luna{
-    height: 200px;
-    width: 120px;
+    height: 500px;
+    width: 300px;
     float: right;
     margin: 5px;
 }
 #travel{
     text-align: center;
-    border: solid rgb(23, 89, 165);
     text-align: center;
     display: flow-root;
     width: 85%;
     margin-left: 9%;
 }
 .travel{
-    width: 200px;
+    width: 600px;
     float: left;
     margin: 5px;
 }
 #Games{
     text-align: center;
-    border: solid rgb(23, 89, 165);
     text-align: center;
     display: flow-root;
     width: 85%;
@@ -119,7 +152,7 @@ hr{
     margin-bottom: 2%;
 }
 .PZ{
-    height: 200px;
+    height: 500px;
     float: right;
     margin: 5px;
 }
@@ -133,13 +166,14 @@ hr{
 .Project2{
     text-align: center;
     padding: 5px;
+
 }
 .Project3{
     text-align: center;
     padding: 5px;
     margin-bottom: 15px;
 }
-.linkedin{
-    color: rgb(137, 221, 221);   
 
+.linkedin{
+   width: 45px;
 }
