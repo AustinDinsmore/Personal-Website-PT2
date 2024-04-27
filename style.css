@@ -80,6 +80,7 @@ p{
 h2{
     grid-area: h2;
     text-align: center;
+    font-size: 40px;
 }
 .home{
     display: grid;
@@ -101,7 +102,7 @@ h2{
 .hook{
     grid-area: hook;
     display:inline;
-
+    font-size: 35px;
 }
 .me {
     grid-area: me;
@@ -114,7 +115,7 @@ h2{
     text-align: center;
     font-style: italic;
     text-transform: capitalize;
-    font-size: large;
+    font-size: 35px;
 }
 hr{
     border: solid silver 2px;
@@ -132,6 +133,7 @@ hr{
 }
 #Luna{
     grid-area: Luna;
+    font-size: 40px;
 }
 .luna{
     grid-area: LunaP;
@@ -140,6 +142,7 @@ hr{
 }
 #travel{
     grid-area: travel;
+    font-size: 35px;
 }
 .travel{
     grid-area: travelP;
@@ -148,6 +151,7 @@ hr{
 }
 #Games{
     grid-area: Games;
+    font-size: 35px;
 }
 .PZ{
     grid-area: PZ;
@@ -170,43 +174,207 @@ hr{
 .Project1{
     grid-area: Project1;
     text-align: center;
+    font-size: 30px;
 }
 .Project2{
     grid-area: Project2;
     text-align: center;
+    font-size: 30px;
 }
 .Project3{
     grid-area: Project3;
     text-align: center;
+    font-size: 30px;
 }
-
+.contact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 20% 1fr;
+    grid-template-areas: 
+        "nav nav"
+        "h2 h2"
+        "form form";
+}
+form{
+    grid-area: form;
+    margin-top: 3%;
+}
 .linkedin{
    width: 45px;
 }
 .github{
     width: 45px;
-    margin-left: 5px;
+    margin-left: 10px;
 }
-.message{
-    width: 600px;
-    height: 200px;
-    text-align: center;
+
+.sent{
+    display: block;
+    font-size: 75px;
+    margin-top: 25%;
 }
 #submit{
     background-color: silver;
 }
 @media only screen and (min-width: 300px) {
-    body{
-        
+    .home{
+        display: grid;
+        grid-template-rows: 15% 10% 75% 1fr;
+        grid-template-columns: 60% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "hook me"
+            "quote quote";
+    }
+    .me{
+        height: 75%;
+        width: 100%;
+        margin-left: 0;
+    }
+    .about{
+        display: grid;
+        grid-template-rows: 6% 3% 35% 35% 35%;
+        grid-template-columns: 50% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "Luna LunaP"
+            "travelP travel"
+            "Games PZ";
+    }
+    .luna{
+        height: 90%;
+        width: 100%;
+    }
+    .travel{
+        height: 50%;
+        width: 100%;
+    }
+    .portfolio1{
+        display: grid;
+        grid-template-rows: 13% 10% 35% 35% 35%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nav"
+            "h2"
+            "Project1"
+            "Project2"
+            "Project3";
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35% 25% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "form form";
     }
 }
 @media only screen and (min-width: 768px){
-    body{
-
+    .home{
+        display: grid;
+        grid-template-rows: 15% 15% 80% 1fr;
+        grid-template-columns: 60% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "hook me"
+            "quote quote";
+    }
+    .me{
+        height: 100%;
+        width: 100%;
+        margin-left: 8%;
+    }
+    .about{
+        display: grid;
+        grid-template-rows: 5% 5% 25% 25% 25%;
+        grid-template-columns: 50% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "Luna LunaP"
+            "travelP travel"
+            "Games PZ";
+    }
+    .luna{
+        height: 100%;
+        width: 100%;
+    }
+    .portfolio1{
+        display: grid;
+        grid-template-rows: 15% 17% 50% 50% 50%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nav"
+            "h2"
+            "Project1"
+            "Project2"
+            "Project3";
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 20% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "form form";
     }
 }
 @media only screen and (min-width: 992px){
-    body{
-
+    .home{
+        display: grid;
+        grid-template-rows: 7% 10% 65% 1fr;
+        grid-template-columns: 50% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "hook me"
+            "quote quote";
+    }
+    .me{
+        height: 100%;
+        width: 75%;
+        margin-left: 12%;
+    }
+    .about{
+        display: grid;
+        grid-template-rows: 2.5% 3% 25% 25% 25%;
+        grid-template-columns: 50% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "Luna LunaP"
+            "travelP travel"
+            "Games PZ";
+    }
+    .travel{
+        height: 75%;
+        width: 100%;
+    }
+    .PZ{
+        height: 90%;
+    }
+    .portfolio1{
+        display: grid;
+        grid-template-rows: 8% 15% 40% 40% 40%;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "nav"
+            "h2"
+            "Project1"
+            "Project2"
+            "Project3";
+    }
+    .contact{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 55% 20% 1fr;
+        grid-template-areas: 
+            "nav nav"
+            "h2 h2"
+            "form form";
     }
 }
